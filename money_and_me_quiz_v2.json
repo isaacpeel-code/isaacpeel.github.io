@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "splash": {
+      "heading": "What type of learner are you?",
+      "subheading": "Take the test to see what type of learner you are and what that meant we considered when designing Money&Me",
+      "cta": "Take the quiz"
+    },
+    "totalQuestions": 4,
+    "restartLabel": "Start the test again",
+    "resultPreheading": "Your player type is the..."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "context": "You've signed up for a new learning app.",
+      "question": "What do you do first?",
+      "options": [
+        {
+          "id": "q1a",
+          "text": "Take the intro tour",
+          "scores": { "ideal": 2, "learner": 2 }
+        },
+        {
+          "id": "q1b",
+          "text": "Skip straight to the first test to see how I do",
+          "scores": { "speedrunner": 3 }
+        },
+        {
+          "id": "q1c",
+          "text": "Browse the topics and pick the one that looks interesting",
+          "scores": { "learner": 2, "ghost": 1 }
+        },
+        {
+          "id": "q1d",
+          "text": "Check what badges and rewards are available and then choose",
+          "scores": { "ideal": 1, "timedout": 2 }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "context": "You earn a badge for completing a module. A few months later, the content gets updated.",
+      "question": "What happens?",
+      "options": [
+        {
+          "id": "q2a",
+          "text": "I go back and do it, I want the knowledge to stay current",
+          "scores": { "ideal": 3, "learner": 1 }
+        },
+        {
+          "id": "q2b",
+          "text": "I still have the badge, so I'm good",
+          "scores": { "timedout": 3 }
+        },
+        {
+          "id": "q2c",
+          "text": "I probably don't notice, honestly",
+          "scores": { "ghost": 3 }
+        },
+        {
+          "id": "q2d",
+          "text": "I skim the update but don't retake the test",
+          "scores": { "speedrunner": 1, "learner": 2 }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "context": "You're halfway through a module and realise you already know most of this.",
+      "question": "You...",
+      "options": [
+        {
+          "id": "q3a",
+          "text": "Keep reading anyway, you might learn something new",
+          "scores": { "learner": 3, "ideal": 1 }
+        },
+        {
+          "id": "q3b",
+          "text": "Jump to the knowledge check and see if you can pass it cold",
+          "scores": { "speedrunner": 3 }
+        },
+        {
+          "id": "q3c",
+          "text": "Close and come back when there's something more interesting",
+          "scores": { "ghost": 2, "timedout": 1 }
+        },
+        {
+          "id": "q3d",
+          "text": "Finish it properly still, completion matters",
+          "scores": { "ideal": 2, "timedout": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "context": "Your employer sends a notification: three new modules added.",
+      "question": "You...",
+      "options": [
+        {
+          "id": "q4a",
+          "text": "Open the link and immediately learn it",
+          "scores": { "ideal": 3, "speedrunner": 1 }
+        },
+        {
+          "id": "q4b",
+          "text": "Save it for later",
+          "scores": { "ghost": 2, "timedout": 2 }
+        },
+        {
+          "id": "q4c",
+          "text": "Check the link, if it's relevant, I'll do it",
+          "scores": { "learner": 3 }
+        },
+        {
+          "id": "q4d",
+          "text": "Open all three, skim to find the quickest one to complete",
+          "scores": { "speedrunner": 3 }
+        }
+      ]
+    }
+  ],
+  "archetypes": {
+    "ideal": {
+      "id": "ideal",
+      "name": "Ideal player",
+      "illustration": "ideal-player.png",
+      "desc": "You engage with content properly, complete knowledge checks, and actually come back when things update. You're exactly who the platform was designed for.",
+      "designImplications": "Designing for you is the easy part. The real challenge was making sure the platform didn't punish everyone else for not being you."
+    },
+    "speedrunner": {
+      "id": "speedrunner",
+      "name": "Speed runner",
+      "illustration": "speed-runner.png",
+      "desc": "Tests first, content never. You've found the most efficient path to a badge and you're not apologising for it. Honestly, fair enough.",
+      "designImplications": "Speed runners taught us that if knowledge checks can be gamed, they will be. We had to design reward logic that still delivered value even when the content got skipped."
+    },
+    "learner": {
+      "id": "learner",
+      "name": "Deep learner",
+      "illustration": "deep-learner.png",
+      "desc": "You're here for the knowledge, not the gamification. Badges don't motivate you — understanding does. The platform had to make sure you didn't feel penalised for ignoring the parts you didn't care about.",
+      "designImplications": "You validated our decision to make the experience non-linear. Forcing a learner through gamification they don't want is the fastest way to lose them."
+    },
+    "ghost": {
+      "id": "ghost",
+      "name": "Ghost",
+      "illustration": "ghost.png",
+      "desc": "You showed up, collected some badges, then quietly disappeared. New content came and went without you. The platform doesn't know you've moved on — but you have.",
+      "designImplications": "Ghosts are the hardest archetype to design for, because they've already left. Re-engagement had to feel like an invitation, not a guilt trip."
+    },
+    "timedout": {
+      "id": "timedout",
+      "name": "Timed-out",
+      "illustration": "timed-out.png",
+      "desc": "You did everything right — once. But the world moved on and your knowledge didn't come with it. You carry badges for things that have since been updated.",
+      "designImplications": "This archetype pushed us to think about knowledge decay, not just knowledge acquisition. A badge shouldn't mean 'I knew this once'."
+    }
+  },
+  "scoring": {
+    "tiebreaker": "first-highest",
+    "notes": "In a tie, the archetype with the highest score wins. If scores are equal, the first alphabetically in the scores object wins — consider whether this edge case needs a dedicated tiebreaker question."
+  }
+}

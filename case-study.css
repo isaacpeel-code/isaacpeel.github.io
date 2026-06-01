@@ -1,0 +1,893 @@
+/* ============================================
+   CASE STUDY — LAYOUT
+   ============================================ */
+
+.cs-layout {
+    position: relative;
+}
+
+/* ============================================
+   SIDEBAR
+   ============================================ */
+
+.cs-sidebar {
+    width: 160px;
+    position: fixed;
+    left: 80px;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cs-back {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #7C8794;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.cs-back:hover {
+    color: #1A1A1A;
+}
+
+.cs-chapter-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.cs-chapter-link {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #B0B7BF;
+    text-decoration: none;
+    padding: 3px 0;
+    transition: color 0.15s ease;
+}
+
+.cs-chapter-link:hover {
+    color: #7C8794;
+}
+
+.cs-chapter-link.is-active {
+    color: #1A1A1A;
+}
+
+/* ============================================
+   MAIN CONTENT
+   ============================================ */
+
+.cs-main {
+    max-width: 628px;
+    margin: 0 auto;
+    padding: 60px 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* ============================================
+   PAGE HEADER
+   ============================================ */
+
+.cs-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0;
+}
+
+.cs-meta {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #7C8794;
+    margin-bottom: 6px;
+}
+
+.cs-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    color: #1A1A1A;
+    margin-bottom: 4px;
+}
+
+.cs-role {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #7C8794;
+}
+
+/* ============================================
+   INTRO
+   ============================================ */
+
+.cs-intro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+/* ============================================
+   IMAGE / COMPONENT PLACEHOLDERS
+   ============================================ */
+
+.cs-hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.cs-placeholder {
+    background: #F5F5F5;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #B0B7BF;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    height: 220px;
+}
+
+.cs-placeholder--wide {
+    height: 320px;
+}
+
+.cs-component-placeholder {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #B0B7BF;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    height: 160px;
+    border: 1.5px dashed #DEDEDE;
+    background: #FAFAFA;
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+
+.cs-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 56px;
+}
+
+.cs-section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #EBEBEB;
+    margin-bottom: 0;
+}
+
+.cs-section-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #1A1A1A;
+}
+
+.cs-section-num {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #7C8794;
+    flex-shrink: 0;
+}
+
+/* ============================================
+   STAT CARDS
+   ============================================ */
+
+.stat-cards {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.stat-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background: #F4F5F7;
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid rgba(35, 36, 41, 0.03);
+}
+
+.stat-num {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    color: #1A1A1A;
+}
+
+.stat-card p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #7C8794;
+}
+
+/* ============================================
+   PULL QUOTE
+   ============================================ */
+
+.pull-quote {
+    margin: 28px 0 4px;
+    padding-left: 16px;
+    border-left: 2px solid #1A1A1A;
+}
+
+.pull-quote p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #1A1A1A;
+}
+
+/* ============================================
+   ARCHETYPE GRID
+   ============================================ */
+
+.archetype-grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    border-top: 1px solid #EBEBEB;
+}
+
+.archetype-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px 0;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.archetype-name {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #1A1A1A;
+}
+
+.archetype-card p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #7C8794;
+}
+
+/* ============================================
+   NAV COMPARISON
+   ============================================ */
+
+.nav-compare {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.nav-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #F5F5F5;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.nav-panel-label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #7C8794;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 14px;
+}
+
+.nav-panel-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.nav-panel-list li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 6px 0;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.nav-panel-list li:last-child {
+    border-bottom: none;
+}
+
+.nav-panel--before .nav-panel-list li {
+    color: #7C8794;
+}
+
+.nav-panel--after .nav-panel-list li {
+    color: #1A1A1A;
+}
+
+/* ============================================
+   ARCHETYPE EXPLORER
+   ============================================ */
+
+.ae-host {
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    align-items: stretch;
+}
+
+/* ── Left column ── */
+.ae-left {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 44%;
+    flex-shrink: 0;
+}
+
+.ae-btn {
+    width: 100%;
+    flex: 1;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px dashed #C8CDD2;
+    border-radius: 10px;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #7C8794;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, font-weight 0s;
+}
+
+.ae-btn--active {
+    background: #F4F5F7;
+    color: #1A1A1A;
+    font-weight: 600;
+    border: 1px solid transparent;
+}
+
+/* ── Right column ── */
+.ae-right {
+    flex: 1;
+    border: 1px dashed #C8CDD2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+    transition: border-color 0.15s ease, background 0.15s ease;
+    min-height: 260px;
+}
+
+.ae-right--active {
+    border-color: transparent;
+    background: #FAFAFA;
+}
+
+.ae-placeholder {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #B0B7BF;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.16s ease;
+}
+
+.ae-placeholder.ae-hidden {
+    opacity: 0;
+}
+
+.ae-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.16s ease;
+}
+
+.ae-content.ae-visible {
+    opacity: 1;
+}
+
+.ae-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.ae-desc {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #1A1A1A;
+    text-align: center;
+}
+
+.ae-box {
+    background: #F4F5F7;
+    border-radius: 10px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+}
+
+.ae-box-label {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #1A1A1A;
+}
+
+.ae-box-text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #7C8794;
+}
+
+@media (max-width: 480px) {
+    .ae-host {
+        flex-direction: column;
+    }
+
+    .ae-left {
+        width: 100%;
+    }
+
+    .ae-right {
+        min-height: 200px;
+    }
+}
+
+/* ============================================
+   FOOTER — inherits homepage centering
+   ============================================ */
+
+/* ============================================
+   QUIZ COMPONENT
+   ============================================ */
+
+/* Full-width #F5F5F5 card with 40px vertical padding */
+.quiz-host {
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    background: #F5F5F5;
+    border-radius: 12px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* #F5F5F5 mat around the phone chassis */
+.phone-outer {
+    background: #F5F5F5;
+    border-radius: 35px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+/* ── Phone chassis (white) ── */
+.phone-frame {
+    width: 360px;
+    max-width: 100%;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 25px;
+    padding: 0;
+}
+
+/* ── Phone screen ── */
+.phone-screen {
+    background: #FFFFFF;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 740px;
+    position: relative;
+    padding: 0;
+}
+
+/* ── Status bar ── */
+.phone-status-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 28px 10px;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.phone-island {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 32px;
+    background: #1A1A1A;
+    border-radius: 20px;
+}
+
+.phone-time {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #1A1A1A;
+    letter-spacing: -0.01em;
+}
+
+.phone-status-icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* ── Screen wrapper (where quiz screens render) ── */
+.quiz-screens {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Shared screen layout ── */
+.quiz-splash,
+.quiz-question,
+.quiz-result {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* ── Splash ── */
+.quiz-splash {
+    padding: 12px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.quiz-splash-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0 8px;
+}
+
+.quiz-splash-heading {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    color: #7C8794;
+    margin-bottom: 14px;
+}
+
+.quiz-splash-sub {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #7C8794;
+}
+
+.quiz-btn-primary {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(102, 102, 102, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #232429;
+    color: #FFFFFF;
+    border: 1px solid #020913;
+    border-radius: 13px;
+    text-wrap: balance;
+    padding: 16px 20px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+}
+
+.quiz-btn-primary:hover {
+    opacity: 0.85;
+}
+
+/* ── Question screen ── */
+.quiz-question {
+    padding: 12px 20px 20px;
+    position: relative;
+}
+
+.quiz-back {
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    background: none;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.quiz-dots {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 0 0;
+}
+
+.quiz-dot {
+    width: 18px;
+    height: 4px;
+    border-radius: 2px;
+    background: #E9E9E9;
+    display: block;
+    transition: background 0.2s ease, width 0.2s ease;
+}
+
+.quiz-dot--active {
+    background: #232429;
+    width: 30px;
+}
+
+/* Middle (context + question) — pushes options to the bottom */
+.quiz-q-middle {
+    margin-top: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 4px;
+}
+
+.quiz-context {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #7C8794;
+    margin-bottom: 10px;
+}
+
+.quiz-q-text {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #232429;
+}
+
+/* ── Options ── */
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.quiz-option {
+    width: 100%;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    border-radius: 13px;
+    text-wrap: balance;
+    padding: 13px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #7C8794;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgba(15, 12, 12, 0.05), 0 1px 2px 0 rgba(15, 12, 12, 0.10);
+    transition: background 0.12s ease, color 0.12s ease, box-shadow 0.12s ease;
+}
+
+.quiz-option:hover {
+    background: #F2F2F2;
+}
+
+.quiz-option.quiz-option--selected,
+.quiz-option.quiz-option--selected:hover {
+    background: linear-gradient(180deg, rgba(102, 102, 102, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #232429;
+    color: #FFFFFF;
+    border: 1px solid #020913;
+    box-shadow: none;
+}
+
+/* ── Result ── */
+.quiz-result {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+}
+
+/* Top bar — matches height/padding of the dots row in question screens */
+.quiz-result-topbar {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px 0;
+    flex-shrink: 0;
+    min-height: 36px;
+}
+
+.quiz-result-back {
+    background: none;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Scrollable body */
+.quiz-result-body {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 8px 20px 0;
+}
+
+/* Pinned footer */
+.quiz-result-footer {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 20px 16px;
+}
+
+.quiz-result-pre {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #7C8794;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.quiz-result-name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    color: #1A1A1A;
+    margin-bottom: 14px;
+}
+
+.quiz-result-img {
+    display: block;
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 14px;
+}
+
+.quiz-result-desc {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #7C8794;
+    margin-bottom: 14px;
+    padding: 0 4px;
+}
+
+.quiz-result-box {
+    width: 100%;
+    background: #F4F5F7;
+    border-radius: 12px;
+    padding: 12px 14px 14px;
+    text-align: center;
+}
+
+.quiz-result-box-label {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #1A1A1A;
+    margin-bottom: 4px;
+}
+
+.quiz-result-box-text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #7C8794;
+}
+
+.quiz-restart {
+    width: 100%;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    border-radius: 13px;
+    text-wrap: balance;
+    padding: 13px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #7C8794;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgba(15, 12, 12, 0.05), 0 1px 2px 0 rgba(15, 12, 12, 0.10);
+    transition: background 0.12s ease;
+}
+
+.quiz-restart:hover {
+    background: #F2F2F2;
+}
+
+/* ============================================
+   RESPONSIVE — hide sidebar below 480px
+   ============================================ */
+
+@media (max-width: 480px) {
+    .cs-sidebar {
+        display: none;
+    }
+
+    .cs-main {
+        padding-top: 40px;
+    }
+
+    .stat-cards {
+        flex-direction: column;
+    }
+
+    .nav-compare {
+        flex-direction: column;
+    }
+}

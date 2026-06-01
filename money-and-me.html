@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Money&Me case study — Isaac Peel, UX/Product Designer">
+    <title>Money&Me — Isaac Peel</title>
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=open-runde@400,500,600,700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="case-study.css?v=29">
+</head>
+<body>
+
+    <div class="cs-layout">
+
+        <!-- Sticky sidebar -->
+        <aside class="cs-sidebar">
+            <a href="index.html" class="cs-back">&#8592; Back</a>
+            <nav class="cs-chapter-nav" aria-label="Page sections">
+                <a href="#s01" class="cs-chapter-link">Getting people to care</a>
+                <a href="#s02" class="cs-chapter-link">Nobody cares</a>
+                <a href="#s03" class="cs-chapter-link">How people play</a>
+                <a href="#s04" class="cs-chapter-link">Project creep</a>
+            </nav>
+        </aside>
+
+        <!-- Main content -->
+        <main class="cs-main">
+
+            <!-- Page header -->
+            <header class="cs-header">
+                <p class="cs-meta">Money&amp;Me &middot; 2025 &middot; 3 months</p>
+                <h1 class="cs-title">Getting people to care about their finances &mdash; without making it feel like homework</h1>
+                <p class="cs-role">Product Designer &amp; Researcher</p>
+            </header>
+
+            <!-- Intro -->
+            <div class="cs-intro">
+                <div class="para">
+                    <p>Money&Me is a financial wellbeing platform built for the workplace. The idea is simple: employers pay for access, and their employees get a place to improve their financial knowledge — through short modules, knowledge checks, webinars, and tools.</p>
+                </div>
+                <div class="para">
+                    <p>Most people never get taught how money actually works. This was an attempt to change that, in a way that felt worth coming back to.</p>
+                </div>
+            </div>
+
+            <!-- Hero image -->
+            <img src="Images/Money&Me/Hero image.png" alt="Money&amp;Me app onboarding screen" class="cs-hero-img">
+
+            <!-- ==============================
+                 SECTION 01
+            ============================== -->
+            <section id="s01" class="cs-section" aria-labelledby="s01-title">
+                <div class="cs-section-header">
+                    <h2 class="cs-section-title" id="s01-title">The problem with financial wellbeing tools is that nobody uses them</h2>
+                    <span class="cs-section-num" aria-label="Section 1">01</span>
+                </div>
+
+                <div class="para">
+                    <p>It's not that people don't care about money. It's that caring about money is stressful, and most tools make it worse. You open them when something's already wrong, wade through jargon, and close them feeling worse than when you started.</p>
+                </div>
+
+                <!-- Stat cards -->
+                <div class="stat-cards">
+                    <div class="stat-card">
+                        <span class="stat-num">25%</span>
+                        <p>of employees say financial concerns have affected their ability to do their job</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">17.5m</span>
+                        <p>hours lost each year from work absence driven by financial stress</p>
+                    </div>
+                </div>
+
+                <div class="para">
+                    <p>The brief for Money&Me was to build something employees would actually return to — and we saw an opportunity.</p>
+                </div>
+
+                <blockquote class="pull-quote">
+                    <p>Gamification</p>
+                </blockquote>
+
+                <div class="para">
+                    <p>But gamification without understanding your users is just decoration. So we started by figuring out who we were actually designing for.</p>
+                </div>
+            </section>
+
+            <!-- ==============================
+                 SECTION 02
+            ============================== -->
+            <section id="s02" class="cs-section" aria-labelledby="s02-title">
+                <div class="cs-section-header">
+                    <h2 class="cs-section-title" id="s02-title">Not everyone plays the same game</h2>
+                    <span class="cs-section-num" aria-label="Section 2">02</span>
+                </div>
+
+                <div class="para">
+                    <p>I spent time looking at how people use platforms like Duolingo and Khan Academy — products that have solved the engagement problem in adjacent spaces. What became clear pretty quickly is that there's no single kind of learner. There are several, and they want fundamentally different things from the same platform.</p>
+                </div>
+                <div class="para">
+                    <p>We mapped five archetypes. The goal wasn't to funnel everyone toward the "correct" behaviour — it was to make sure the platform felt fair regardless of how you came to it.</p>
+                </div>
+
+                <!-- Archetype cards -->
+                <div class="archetype-grid">
+                    <div class="archetype-card">
+                        <h3 class="archetype-name">The Sprint Learner</h3>
+                        <p>Progress-first. Gets in, completes modules fast, chases the next badge. Doesn't read optional content. Responds well to streaks and clear milestones.</p>
+                    </div>
+                    <div class="archetype-card">
+                        <h3 class="archetype-name">The Deep Reader</h3>
+                        <p>Wants to understand, not just complete. Reads everything, explores links, asks questions in webinars. Streaks feel irrelevant — depth matters.</p>
+                    </div>
+                    <div class="archetype-card">
+                        <h3 class="archetype-name">The Reluctant User</h3>
+                        <p>Only here because their employer said so. Needs low friction and clear value from the first minute. If it feels like homework, they leave.</p>
+                    </div>
+                    <div class="archetype-card">
+                        <h3 class="archetype-name">The Anxious Improver</h3>
+                        <p>Motivated by worry, not curiosity. Knows they should be better with money but feels ashamed about where they are. Tone matters enormously.</p>
+                    </div>
+                    <div class="archetype-card">
+                        <h3 class="archetype-name">The Goal Chaser</h3>
+                        <p>Has a specific outcome in mind — buying a house, paying off debt. Everything else is noise. Wants tools and targets, not theory.</p>
+                    </div>
+                </div>
+
+                <!-- Quiz component -->
+                <div id="quiz-component"></div>
+
+                <!-- Archetype explorer placeholder -->
+                <div id="archetype-explorer" class="cs-component-placeholder" aria-label="Archetype explorer component — coming soon">
+                    Archetype explorer
+                </div>
+
+                <div class="para">
+                    <p>This shaped two things. The experience had to be genuinely non-linear — a sprint learner shouldn't be trapped behind fifteen screens of reading to earn a badge. And complexity had to reveal itself gradually, so the platform met users at their level rather than dumping everything upfront.</p>
+                </div>
+                <div class="para">
+                    <p>We also introduced a Financial Fitness Assessment early in the journey. The problem was that people are bad at self-assessing their financial knowledge — they either overestimate or underestimate and get served content at the wrong level. The assessment figured it out for them, mapping each user to one of four profiles from Novice to Expert, and adapting from there.</p>
+                </div>
+                <div class="para">
+                    <p>The assessment wasn't just about knowledge level. It looked at learning personality too. How you approach learning matters as much as what you already know.</p>
+                </div>
+            </section>
+
+            <!-- ==============================
+                 SECTION 03
+            ============================== -->
+            <section id="s03" class="cs-section" aria-labelledby="s03-title">
+                <div class="cs-section-header">
+                    <h2 class="cs-section-title" id="s03-title">We launched with ten navigation items. That was too many.</h2>
+                    <span class="cs-section-num" aria-label="Section 3">03</span>
+                </div>
+
+                <div class="para">
+                    <p>I knew before user testing confirmed it. Miller's Law — the idea that people can hold around seven chunks of information in working memory — isn't just a theory you cite in a deck. It's something you feel when you're looking at a navigation with ten items and trying to find the thing you need.</p>
+                </div>
+                <div class="para">
+                    <p>The honest version of what happened: we had a tight twelve-week deadline. Client requests came in late, when there was no longer time to think carefully about where new features should live. They got their own navigation items because that was the path of least resistance. By launch, the structure we'd built carefully at the start had quietly collapsed under the weight of things we said yes to.</p>
+                </div>
+                <div class="para">
+                    <p>It wasn't a scope management problem. It was a design process problem. We didn't have anything in place that protected the information architecture from late-stage additions. That's the thing I'd fix first if I was doing it again.</p>
+                </div>
+                <div class="para">
+                    <p>Post-launch, I ran a closed card sort with nine participants to understand where things actually belonged in users' mental models. Some sections had clear consensus — modules, account settings, webinars all landed exactly where you'd expect. Others were messier. Employee benefits showed weak agreement across the board, which told us the label was either doing too little work, or the category didn't deserve its own home at the top level.</p>
+                </div>
+
+                <!-- Image placeholder -->
+                <div class="cs-placeholder cs-placeholder--wide" aria-label="Card sort results image placeholder">
+                    Image
+                </div>
+
+                <!-- Nav before / after comparison -->
+                <div class="nav-compare">
+                    <div class="nav-panel nav-panel--before">
+                        <span class="nav-panel-label">Before &mdash; 10 items</span>
+                        <ul class="nav-panel-list">
+                            <li>Home</li>
+                            <li>Modules</li>
+                            <li>Webinars</li>
+                            <li>Challenges</li>
+                            <li>Leaderboard</li>
+                            <li>Employee Benefits</li>
+                            <li>Financial Tools</li>
+                            <li>Knowledge Check</li>
+                            <li>Events</li>
+                            <li>My Account</li>
+                        </ul>
+                    </div>
+                    <div class="nav-panel nav-panel--after">
+                        <span class="nav-panel-label">After &mdash; 6 items</span>
+                        <ul class="nav-panel-list">
+                            <li>Home</li>
+                            <li>Education</li>
+                            <li>Challenges</li>
+                            <li>Tools</li>
+                            <li>Benefits</li>
+                            <li>Account</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="para">
+                    <p>Webinars and Modules became Education. Overlapping sections merged. Labels were rewritten to work harder. We went from ten items to six — and the structure finally matched how users actually thought about the platform.</p>
+                </div>
+            </section>
+
+            <!-- ==============================
+                 SECTION 04
+            ============================== -->
+            <section id="s04" class="cs-section" aria-labelledby="s04-title">
+                <div class="cs-section-header">
+                    <h2 class="cs-section-title" id="s04-title">It's live. The numbers are still coming.</h2>
+                    <span class="cs-section-num" aria-label="Section 4">04</span>
+                </div>
+
+                <div class="para">
+                    <p>The thing that stays with me from this project isn't the gamification or the archetypes or even the navigation rebuild. It's that the hardest design problems aren't usually the ones in the brief. They're the ones that creep in sideways while you're busy delivering everything else.</p>
+                </div>
+                <div class="para">
+                    <p>A platform that teaches financial literacy probably shouldn't be the thing that catches you off guard with scope creep. But it did, and figuring out how to respond to that in real time — without torching the architecture, without losing the trust of a client who had their own pressures — that's the work that doesn't make it into the case study deck.</p>
+                </div>
+                <div class="para">
+                    <p>It made me a more honest designer. And a better one.</p>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Footer — same as homepage -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://x.com/isaacjpeel" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <span aria-hidden="true">&middot;</span>
+            <a href="https://www.linkedin.com/in/isaac-peel-89230a1a6/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            <span aria-hidden="true">&middot;</span>
+            <a href="https://www.instagram.com/isaac_281/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="quiz.js"></script>
+    <script src="archetype-explorer.js"></script>
+    <script>
+        /* ============================================
+           SCROLL SPY — highlight active chapter in sidebar
+           ============================================ */
+        (function () {
+            const links = document.querySelectorAll('.cs-chapter-link');
+            const sections = Array.from(links).map(l => document.querySelector(l.getAttribute('href')));
+
+            function setActive(index) {
+                links.forEach((l, i) => {
+                    l.classList.toggle('is-active', i === index);
+                });
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const index = sections.indexOf(entry.target);
+                        if (index !== -1) setActive(index);
+                    }
+                });
+            }, {
+                rootMargin: '-20% 0px -70% 0px',
+                threshold: 0
+            });
+
+            sections.forEach(s => { if (s) observer.observe(s); });
+        }());
+    </script>
+
+</body>
+</html>
