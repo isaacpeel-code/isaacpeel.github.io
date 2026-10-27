@@ -90,53 +90,62 @@
     /* ── Measure all panels, lock right column height ─────────── */
 
     function measureAndLock() {
-        // Off-screen sizer matching the right column's inner width
-        const innerW = rightCol.clientWidth - 32; // subtract padding
-        const sizer  = document.createElement('div');
+        // Use the rendered right column width — accurate at window.load.
+        // Guard against collapsed viewports (preview tools, hidden iframes, etc.)
+        const innerW = rightCol.offsetWidth - 32;
+        if (innerW < 100) return;
+
+        const sizer = document.createElement('div');
         sizer.style.cssText =
             'position:absolute;left:-9999px;top:0;width:' + innerW +
-            'px;visibility:hidden;pointer-events:none;';
+            'px;visibility:hidden;pointer-events:none;font-family:inherit;';
         document.body.appendChild(sizer);
 
         const panels = archetypes.map(arch => {
             const p = buildPanel(arch);
-            p.classList.add('ae-visible'); // make it measurable
+            p.classList.add('ae-visible');
             sizer.appendChild(p);
             return p;
         });
 
-        const imgs   = Array.from(sizer.querySelectorAll('img'));
-        let pending  = imgs.length || 1; // at least 1 so we always call done()
+        const imgs  = Array.from(sizer.querySelectorAll('img'));
+        let pending = imgs.length;
 
-        function done() {
+        function settle() {
             pending--;
             if (pending > 0) return;
 
-            // All images settled — find tallest panel
             let maxH = 0;
             panels.forEach(p => { maxH = Math.max(maxH, p.offsetHeight); });
 
-            // Lock right column: panel height + top/bottom padding (16px each)
+            // Add top + bottom padding of ae-right (16px each side)
             rightCol.style.minHeight = (maxH + 32) + 'px';
-
             document.body.removeChild(sizer);
         }
 
         if (imgs.length === 0) {
-            done();
+            let maxH = 0;
+            panels.forEach(p => { maxH = Math.max(maxH, p.offsetHeight); });
+            rightCol.style.minHeight = (maxH + 32) + 'px';
+            document.body.removeChild(sizer);
         } else {
             imgs.forEach(img => {
-                if (img.complete && img.naturalHeight > 0) { done(); }
-                else {
-                    img.addEventListener('load',  done);
-                    img.addEventListener('error', done);
+                if (img.complete && img.naturalHeight > 0) {
+                    settle();
+                } else {
+                    img.addEventListener('load',  settle);
+                    img.addEventListener('error', settle);
                 }
             });
         }
     }
 
-    // Run after layout is established
-    requestAnimationFrame(measureAndLock);
+    // Wait for full page load so layout dimensions are accurate
+    if (document.readyState === 'complete') {
+        measureAndLock();
+    } else {
+        window.addEventListener('load', measureAndLock);
+    }
 
     /* ── State ────────────────────────────────────────────────── */
 

@@ -18,9 +18,9 @@
             <a href="index.html" class="cs-back">&#8592; Back</a>
             <nav class="cs-chapter-nav" aria-label="Page sections">
                 <a href="#s01" class="cs-chapter-link">Getting people to care</a>
-                <a href="#s02" class="cs-chapter-link">Nobody cares</a>
-                <a href="#s03" class="cs-chapter-link">How people play</a>
-                <a href="#s04" class="cs-chapter-link">Project creep</a>
+                <a href="#s02" class="cs-chapter-link">Discovering users</a>
+                <a href="#s03" class="cs-chapter-link">Scope creep</a>
+                <a href="#s04" class="cs-chapter-link">Conclusion</a>
             </nav>
         </aside>
 
@@ -30,17 +30,17 @@
             <!-- Page header -->
             <header class="cs-header">
                 <p class="cs-meta">Money&amp;Me &middot; 2025 &middot; 3 months</p>
-                <h1 class="cs-title">Getting people to care about their finances &mdash; without making it feel like homework</h1>
+                <h1 class="cs-title">Getting people to care about their finances, without making it feel like homework</h1>
                 <p class="cs-role">Product Designer &amp; Researcher</p>
             </header>
 
             <!-- Intro -->
             <div class="cs-intro">
                 <div class="para">
-                    <p>Money&Me is a financial wellbeing platform built for the workplace. The idea is simple: employers pay for access, and their employees get a place to improve their financial knowledge — through short modules, knowledge checks, webinars, and tools.</p>
+                    <p>Money&Me is a financial wellbeing platform that employers buy for their staff. You log in and there are short modules, quick knowledge checks, webinars and a few tools to help you get your head around money.</p>
                 </div>
                 <div class="para">
-                    <p>Most people never get taught how money actually works. This was an attempt to change that, in a way that felt worth coming back to.</p>
+                    <p>Most of us were never taught any of this at school. The job was to make something people would open because they wanted to, not because HR sent another reminder.</p>
                 </div>
             </div>
 
@@ -52,13 +52,15 @@
             ============================== -->
             <section id="s01" class="cs-section" aria-labelledby="s01-title">
                 <div class="cs-section-header">
-                    <h2 class="cs-section-title" id="s01-title">The problem with financial wellbeing tools is that nobody uses them</h2>
+                    <h2 class="cs-section-title" id="s01-title">Avoidance</h2>
                     <span class="cs-section-num" aria-label="Section 1">01</span>
                 </div>
 
                 <div class="para">
-                    <p>It's not that people don't care about money. It's that caring about money is stressful, and most tools make it worse. You open them when something's already wrong, wade through jargon, and close them feeling worse than when you started.</p>
+                    <p>Most people only open a money app when something's already gone wrong. The car's failed its MOT, or the overdraft is creeping up. So the app arrives attached to a bad feeling, and then it greets you with words like drawdown and annuity. No wonder people close it and don't come back.</p>
+                    <p>I've come to think of avoiding money as a kind of anxiety. Calling it laziness gets it wrong, and it leads you to the wrong design. Build for lazy people and you build nags and reminders. Show those to someone anxious and they feel worse.</p>
                 </div>
+    
 
                 <!-- Stat cards -->
                 <div class="stat-cards">
@@ -73,15 +75,13 @@
                 </div>
 
                 <div class="para">
-                    <p>The brief for Money&Me was to build something employees would actually return to — and we saw an opportunity.</p>
+                    <p>So the brief was to build something people actually came back to, and our bet was gamification. Streaks, badges, a bit of friendly competition. The stuff that has people doing Spanish on Duolingo at 11pm to save a streak.</p>
                 </div>
 
-                <blockquote class="pull-quote">
-                    <p>Gamification</p>
-                </blockquote>
+   
 
                 <div class="para">
-                    <p>But gamification without understanding your users is just decoration. So we started by figuring out who we were actually designing for.</p>
+                    <p>I was a bit wary of it, if I'm honest. Gamification is easy to bolt on and easy to get wrong. A leaderboard means nothing to someone who's embarrassed about where they'd rank. So before any of that, we needed to know who we were designing for.</p>
                 </div>
             </section>
 
@@ -95,10 +95,10 @@
                 </div>
 
                 <div class="para">
-                    <p>I spent time looking at how people use platforms like Duolingo and Khan Academy — products that have solved the engagement problem in adjacent spaces. What became clear pretty quickly is that there's no single kind of learner. There are several, and they want fundamentally different things from the same platform.</p>
+                    <p>I spent a while poking around Duolingo and Khan Academy, two products that have cracked getting people to come back. What jumped out was how differently people use them. Some tear through lessons to keep a streak alive. Others ignore the streak entirely and read every footnote. Same app, completely different reasons for being there.</p>
                 </div>
                 <div class="para">
-                    <p>We mapped five archetypes. The goal wasn't to funnel everyone toward the "correct" behaviour — it was to make sure the platform felt fair regardless of how you came to it.</p>
+                    <p>We ended up with five archetypes, and I wanted every one of them to feel like the platform was built with them in mind. Nobody should have to use it "properly" to get something out of it.</p>
                 </div>
 
                 <!-- Archetype cards -->
@@ -109,11 +109,11 @@
                     </div>
                     <div class="archetype-card">
                         <h3 class="archetype-name">The Deep Reader</h3>
-                        <p>Wants to understand, not just complete. Reads everything, explores links, asks questions in webinars. Streaks feel irrelevant — depth matters.</p>
+                        <p>Wants to understand, not just finish for badges. Reads everything, explores links, asks questions in webinars. Streaks feel irrelevant, gaining an understanding matters.</p>
                     </div>
                     <div class="archetype-card">
                         <h3 class="archetype-name">The Reluctant User</h3>
-                        <p>Only here because their employer said so. Needs low friction and clear value from the first minute. If it feels like homework, they leave.</p>
+                        <p>Only here because their employer said so. Needs low friction and clear value from the first minute. If it feels like homework, they'll drop out quickly.</p>
                     </div>
                     <div class="archetype-card">
                         <h3 class="archetype-name">The Anxious Improver</h3>
@@ -134,13 +134,10 @@
                 </div>
 
                 <div class="para">
-                    <p>This shaped two things. The experience had to be genuinely non-linear — a sprint learner shouldn't be trapped behind fifteen screens of reading to earn a badge. And complexity had to reveal itself gradually, so the platform met users at their level rather than dumping everything upfront.</p>
+                    <p>Two things came out of this. First, the platform couldn't be a straight line. A sprint learner shouldn't have to read fifteen screens to earn a badge. Second, it had to reveal itself slowly, so a newcomer wasn't hit with everything at once.</p>
                 </div>
                 <div class="para">
-                    <p>We also introduced a Financial Fitness Assessment early in the journey. The problem was that people are bad at self-assessing their financial knowledge — they either overestimate or underestimate and get served content at the wrong level. The assessment figured it out for them, mapping each user to one of four profiles from Novice to Expert, and adapting from there.</p>
-                </div>
-                <div class="para">
-                    <p>The assessment wasn't just about knowledge level. It looked at learning personality too. How you approach learning matters as much as what you already know.</p>
+                    <p>We also added a Financial Fitness Assessment near the start. People are surprisingly bad at judging what they know about money. Some think they're experts, some assume they know nothing, and both end up reading the wrong stuff. The assessment did the judging for them. It placed people on one of four levels, from Novice to Expert, and picked up how they like to learn too, because that matters just as much as what they already know.</p>
                 </div>
             </section>
 
@@ -149,21 +146,21 @@
             ============================== -->
             <section id="s03" class="cs-section" aria-labelledby="s03-title">
                 <div class="cs-section-header">
-                    <h2 class="cs-section-title" id="s03-title">We launched with ten navigation items. That was too many.</h2>
+                    <h2 class="cs-section-title" id="s03-title">Ten navigation items</h2>
                     <span class="cs-section-num" aria-label="Section 3">03</span>
                 </div>
 
                 <div class="para">
-                    <p>I knew before user testing confirmed it. Miller's Law — the idea that people can hold around seven chunks of information in working memory — isn't just a theory you cite in a deck. It's something you feel when you're looking at a navigation with ten items and trying to find the thing you need.</p>
+                    <p>We launched with ten items in the navigation. That's too many, and I knew it before testing told me. You don't need a law of UX to work that out. Look at a menu that long while you're trying to find one thing and you feel it.</p>
                 </div>
                 <div class="para">
-                    <p>The honest version of what happened: we had a tight twelve-week deadline. Client requests came in late, when there was no longer time to think carefully about where new features should live. They got their own navigation items because that was the path of least resistance. By launch, the structure we'd built carefully at the start had quietly collapsed under the weight of things we said yes to.</p>
+                    <p>So how did we end up there? Twelve weeks is tight. Late on, new requests came in from the client, and there wasn't time to think properly about where they should live. The quickest answer was always another nav item. Each one seemed fine on its own. By launch, the structure we'd planned so carefully at the start had fallen apart.</p>
                 </div>
                 <div class="para">
-                    <p>It wasn't a scope management problem. It was a design process problem. We didn't have anything in place that protected the information architecture from late-stage additions. That's the thing I'd fix first if I was doing it again.</p>
+                    <p>I don't blame the client for that. They had their own pressures. What we were missing was anything in our process that protected the information architecture once the late requests showed up. That's the first thing I'd put in place next time.</p>
                 </div>
                 <div class="para">
-                    <p>Post-launch, I ran a closed card sort with nine participants to understand where things actually belonged in users' mental models. Some sections had clear consensus — modules, account settings, webinars all landed exactly where you'd expect. Others were messier. Employee benefits showed weak agreement across the board, which told us the label was either doing too little work, or the category didn't deserve its own home at the top level.</p>
+                    <p>After launch I ran a closed card sort with nine people to see where things really belonged in their heads. Some of it was reassuring. Modules, account settings and webinars all landed where you'd expect. Employee Benefits was a mess. Nobody agreed where it went, which told me either the label wasn't saying enough or it didn't deserve a spot at the top level.</p>
                 </div>
 
                 <!-- Image placeholder -->
@@ -202,7 +199,7 @@
                 </div>
 
                 <div class="para">
-                    <p>Webinars and Modules became Education. Overlapping sections merged. Labels were rewritten to work harder. We went from ten items to six — and the structure finally matched how users actually thought about the platform.</p>
+                    <p>Webinars and Modules became Education. Sections that overlapped were merged, and labels were rewritten to say what was actually behind them. Ten items became six, and for the first time the nav matched how people thought about the platform.</p>
                 </div>
             </section>
 
@@ -211,18 +208,18 @@
             ============================== -->
             <section id="s04" class="cs-section" aria-labelledby="s04-title">
                 <div class="cs-section-header">
-                    <h2 class="cs-section-title" id="s04-title">It's live. The numbers are still coming.</h2>
+                    <h2 class="cs-section-title" id="s04-title">Looking back</h2>
                     <span class="cs-section-num" aria-label="Section 4">04</span>
                 </div>
 
                 <div class="para">
-                    <p>The thing that stays with me from this project isn't the gamification or the archetypes or even the navigation rebuild. It's that the hardest design problems aren't usually the ones in the brief. They're the ones that creep in sideways while you're busy delivering everything else.</p>
+                    <p>Money&Me is live and the numbers are still coming in, so I can't tell you yet whether people keep coming back. I'll update this when I can.</p>
                 </div>
                 <div class="para">
-                    <p>A platform that teaches financial literacy probably shouldn't be the thing that catches you off guard with scope creep. But it did, and figuring out how to respond to that in real time — without torching the architecture, without losing the trust of a client who had their own pressures — that's the work that doesn't make it into the case study deck.</p>
+                    <p>The part I think about most is the navigation. The biggest problem on the project was never in the brief. It turned up one small request at a time while we were busy shipping everything else. I'm much quicker to spot that now, and much more likely to ask "where does this go?" before saying yes.</p>
                 </div>
                 <div class="para">
-                    <p>It made me a more honest designer. And a better one.</p>
+                    <p>There's an irony in a money platform getting overspent by lots of small yeses. I've not forgotten it.</p>
                 </div>
             </section>
 
